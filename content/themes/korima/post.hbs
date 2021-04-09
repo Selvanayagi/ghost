@@ -177,7 +177,8 @@
                     </div>
                     
                 </div>
-
+                 <h4>All tags</h4>
+        {{> "sample"}}
                 {{#get "posts" limit="3" filter="id:-{{comment_id}}+tag:{{primary_tag.slug}}" as |related|}}
                 {{!-- {{#get "posts" limit="3" filter="tags:[{{post.tags}}]+id:-{{post.id}}" as |related|}} --}}
                 {{#if related}}
